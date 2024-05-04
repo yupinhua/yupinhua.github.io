@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="utf-8">
+  <!-- 響應式網站 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的旅遊網站</title>
+  <!-- bootstrap導入程式 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  >
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./freetravel.css">
+</head>
+
+
+<body>
+  <div id="firstArea">
+    <div class="firstArea-center">
+      <a href="http://127.0.0.1:5500/freetravel.html">
+        <div class="logo"></div>
+      </a>
+      <!-- <div>由<a href="https://www.designevo.com/tw/" title="免費的線上標誌製做器">DesignEvo</a>製作的標誌</div> -->
+
+      <nav> <!-- <nav> 元素代表一個網頁中提供導航欄連結的區域 -->
+        <ul><!-- 用無序清單元素來做導覽列 -->
+          <li><a href="information.html" title="旅遊遊程">旅遊遊程</a></li>
+          <li><a href="hotel.html" title="旅遊住宿">旅遊住宿</a></li>
+          <li><a href="index.html" title="旅遊票券">旅遊票券</a></li>
+          <li><a href="strategy.html" title="旅遊規劃">旅遊規劃</a></li>
+
+        </ul>
+      </nav>
+      <a class="right" href="signup.html">註冊</a> <!-- 右上角第一個按鍵"註冊" -->
+      <a class="right-two" href="login.html">登入</a> <!-- 右上角第二個按鍵"登入" -->
+    </div> <!-- firstArea結束 -->
+
+
+    <div id="secondArea">
+      <!-- 引入輪播圖 --><!-- data-bs-ride="carousel"在bootstrap程式套用"carousel"框架-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- 關鍵字"carousel slide"會產生滑動效果 -->
+        <!--指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <!--圖片投影 -->
+        <div class="carousel-inner">
+          <!-- 第一張圖片投影，一定要加 active -->
+          <div class="carousel-item active">
+            <img src="https://www.eztravel.com.tw/events/taiwanpromo/image/banner_tb.jpg" class="d-block w-100"
+              alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1></h1>
+              <p></p1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/c1/b1/2e/c1b12e404c218bd22287808bb213f704.gif"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://gsimg.asiayo.com/ay-image-upload/1512638774537_og_hualien-1.jpg" class="d-block w-100"
+              alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><!-- 輪播圖區結束 -->
+
+      <!-- 製作搜尋欄 -->
+      <div class="search">
+        <input type="search" class="search-input" placeholder="請輸入地點" />
+        <button class="button1">搜尋</button>
+
+        <!-- 製作下方的建議熱門搜尋 -->
+        <div class="menu">
+          <ul>
+            <h2><b>熱門搜尋:</b></h2>
+            <li><a href="https://www.tayih.com.tw/tickets.asp?ID=254&TID=5">花蓮港賞鯨船</a></li>
+            <li><a href="https://www.tnchateau.com.tw/news-detail/20240429/">2024/5/3~5/6 成大國際旅展</a></li>
+            <li><a href="https://www.ctplayer.com/2020taiwan-international-balloon-festival/">台東熱氣球</a></li>
+            <li><a href="https://kinmen.travel/zh-tw/travel/all-regions/historic-village">金門傳統聚落</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div> <!-- secondArea結束 -->
+
+
+    <div id="thirdArea">
+      <h3 align="center"><b>熱門主題</b></h3> <!-- <h3 align="center">網頁文章標題置中對齊 -->
+      <!-- <section class="py-5">padding的y軸，上下會有內測間距，5為最大級別  -->
+      <!-- <div class="container">Bootstrap排版常用container，套用container這個類別 -->
+
+      <!-- <div class="row">意旨列排法 -->
+      <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- 更改為 .row-cols-3，則會看到第四張卡片被換行。 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/taiwan-8-historic-trail/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/10/plan_2019092018033620271_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">秋天來去健行步道走走！台灣登山健行古道8選推薦</h4>
+                <p class="card-text">
+                  台灣有不少值得一訪的登山健行古道，它們不像玉山、雪山那般難行，卻也不會像墾丁海邊那樣人擠人，而是擁有開闊海景湖色的登山步道，更擁有深度的歷史與文化背景，親自以雙腳去走一走，相信你會獲得美景以外更多的體驗！
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/taiwan-8-historic-trail/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/10/plan_2019092018033620271_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">秋天來去健行步道走走！台灣登山健行古道8選推薦</h4>
+                <p class="card-text">
+                  台灣有不少值得一訪的登山健行古道，它們不像玉山、雪山那般難行，卻也不會像墾丁海邊那樣人擠人，而是擁有開闊海景湖色的登山步道，更擁有深度的歷史與文化背景，親自以雙腳去走一走，相信你會獲得美景以外更多的體驗！
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/taiwan-8-historic-trail/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/10/plan_2019092018033620271_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">秋天來去健行步道走走！台灣登山健行古道8選推薦</h4>
+                <p class="card-text">
+                  台灣有不少值得一訪的登山健行古道，它們不像玉山、雪山那般難行，卻也不會像墾丁海邊那樣人擠人，而是擁有開闊海景湖色的登山步道，更擁有深度的歷史與文化背景，親自以雙腳去走一走，相信你會獲得美景以外更多的體驗！
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/taiwan-8-historic-trail/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/10/plan_2019092018033620271_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">秋天來去健行步道走走！台灣登山健行古道8選推薦</h4>
+                <p class="card-text">
+                  台灣有不少值得一訪的登山健行古道，它們不像玉山、雪山那般難行，卻也不會像墾丁海邊那樣人擠人，而是擁有開闊海景湖色的登山步道，更擁有深度的歷史與文化背景，親自以雙腳去走一走，相信你會獲得美景以外更多的體驗！
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/wuling-cherry-blossom-traffic-attractions/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/01/%E5%9C%96%E7%89%87%E4%BE%86%E6%BA%90-%E6%AD%A6%E9%99%B5%E8%BE%B2%E5%A0%B4-%E8%BC%95%E6%97%85%E8%A1%8C.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">暖冬讓武陵櫻花大爆發啦！武陵櫻花季交通管制、賞花資訊</h4>
+                <p class="card-text">暖冬讓武陵農場櫻花的悄悄盛開，滿山桃紅可望在年假大爆發！武陵農場櫻花季，將於2月7日（大年初三）開跑！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/wuling-cherry-blossom-traffic-attractions/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/01/%E5%9C%96%E7%89%87%E4%BE%86%E6%BA%90-%E6%AD%A6%E9%99%B5%E8%BE%B2%E5%A0%B4-%E8%BC%95%E6%97%85%E8%A1%8C.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">暖冬讓武陵櫻花大爆發啦！武陵櫻花季交通管制、賞花資訊</h4>
+                <p class="card-text">暖冬讓武陵農場櫻花的悄悄盛開，滿山桃紅可望在年假大爆發！武陵農場櫻花季，將於2月7日（大年初三）開跑！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/wuling-cherry-blossom-traffic-attractions/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/01/%E5%9C%96%E7%89%87%E4%BE%86%E6%BA%90-%E6%AD%A6%E9%99%B5%E8%BE%B2%E5%A0%B4-%E8%BC%95%E6%97%85%E8%A1%8C.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">暖冬讓武陵櫻花大爆發啦！武陵櫻花季交通管制、賞花資訊</h4>
+                <p class="card-text">暖冬讓武陵農場櫻花的悄悄盛開，滿山桃紅可望在年假大爆發！武陵農場櫻花季，將於2月7日（大年初三）開跑！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/wuling-cherry-blossom-traffic-attractions/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/01/%E5%9C%96%E7%89%87%E4%BE%86%E6%BA%90-%E6%AD%A6%E9%99%B5%E8%BE%B2%E5%A0%B4-%E8%BC%95%E6%97%85%E8%A1%8C.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">暖冬讓武陵櫻花大爆發啦！武陵櫻花季交通管制、賞花資訊</h4>
+                <p class="card-text">暖冬讓武陵農場櫻花的悄悄盛開，滿山桃紅可望在年假大爆發！武陵農場櫻花季，將於2月7日（大年初三）開跑！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://blog.tripbaa.com/wuling-cherry-blossom-traffic-attractions/"><img
+                src="https://blog.tripbaa.com/wp-content/uploads/2019/01/%E5%9C%96%E7%89%87%E4%BE%86%E6%BA%90-%E6%AD%A6%E9%99%B5%E8%BE%B2%E5%A0%B4-%E8%BC%95%E6%97%85%E8%A1%8C.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">暖冬讓武陵櫻花大爆發啦！武陵櫻花季交通管制、賞花資訊</h4>
+                <p class="card-text">暖冬讓武陵農場櫻花的悄悄盛開，滿山桃紅可望在年假大爆發！武陵農場櫻花季，將於2月7日（大年初三）開跑！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- row row-cols-1 row-cols-md-3 g-4結束 -->
+
+      <a href="javascript: void(0)" class="btn"><!-- 藍色動畫按鈕:"更多" -->
+        更 多
+        <span></span><span></span><span></span><span></span>
+      </a>
+
+    </div> <!-- thirdArea結束 -->
+
+
+    <div id="fourthArea">
+      <h3 align="center"><b>熱門行程</b></h3>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- 更改為 .row-cols-3，則會看到第四張卡片被換行。 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/bnb/31426/autoxauto/desc_Z9ZkA4xUXtcYxo.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/bnb/31426/autoxauto/desc_lZuTcL40grMQrw.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/bnb/31426/autoxauto/desc_PiHHWY8w22y7Nu.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/bnb/31426/autoxauto/desc_P0CeZ8jzzzrCLH.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/room/74073/autoxauto/house_A6noTkSniSdMqo.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://image-store.asiayo.com/room/98842/autoxauto/house_hlQsBz1u7NX2aO.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://www.tripbaa.com/travel/20150601133427q8i/downloads/customer/20000/1000/10062bjiwm/travel/plan_201810011252247_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://www.tripbaa.com/travel/20150601133427q8i/downloads/customer/20000/1000/10062bjiwm/travel/plan_201810011252226_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://esence.travel/uncategorized/daxi-old-street/"><img
+                src="https://www.tripbaa.com/travel/20150601133427q8i/downloads/customer/20000/1000/10062bjiwm/travel/plan_201810011252309_b.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">大溪老街</h4>
+                <button class="button2">限時優惠</button>
+                <p class="card-text">到桃園大溪除了逛大溪老街吃美食、欣賞巴洛克建築、兩蔣文化園區遊慈湖及賞陵寢等幾個經典大溪景點以外，周邊還有許多你想不到的好玩之處。</p>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot">桃園</i>
+                </div><!--地點圖標 -->
+                <h6 align="right">TWD 1,800 起</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- row row-cols-1 row-cols-md-3 g-4 結束 -->
+
+      <a href="javascript: void(0)" class="btn"> <!-- 藍色動畫按鈕:"更多" -->
+        更 多
+        <span></span><span></span><span></span><span></span>
+      </a>
+
+    </div><!-- fourthArea結束 -->
+
+
+
+    <div id="fifthArea">
+      <!-- 使用  JS套件  slick線上輪播-->
+      <!--  .bg-primary意思是藍色，p - 5是設定 padding 的類別，把這兩個都刪掉-->
+      <div class="container">
+        <h5 align="center"><b>熱門地區</b></h5>
+        <div class="slider responsive">
+          <div>
+            <button type="button5">屏東<img src="https://www.tripbaa.com/downloads/country_area/20240227115510.jpg"
+                height="350px"></button>
+          </div>
+          <div>
+            <button type="button5">東京<img src="https://www.tripbaa.com/downloads/country_area/20240327123200.jpg"
+                height="350px"></button>
+          </div>
+          <div>
+            <button type="button5">沖繩<img src="https://www.tripbaa.com/downloads/country_area/20230531131340.jpg"
+                height="350px"></button>
+          </div>
+          <div>
+            <button type="button5">首爾<img src="https://www.tripbaa.com/downloads/country_area/20190530155658.jpg"
+                height="350px" width="260px"></button>
+          </div>
+          <div>
+            <button type="button5">台北<img src="https://www.tripbaa.com/downloads/country_area/20230731171749.jpg"
+                height="350px"></button>
+          </div>
+          <div>
+            <button type="button5">宜蘭<img src="https://www.tripbaa.com/downloads/country_area/20230224165621.jpg"
+                height="350px" width="260px"></button>
+          </div>
+          <div>
+            <button type="button5">南投<img src="https://www.tripbaa.com/downloads/country_area/20231026151157.jpg"
+                height="350px" width="260px"></button>
+          </div>
+          <div>
+            <button type="button5">台東<img src="https://www.tripbaa.com/downloads/country_area/20240327122727.jpg"
+                height="350px"></button>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- fifthArea結束 -->
+
+
+
+    <div id="sixthArea">
+      <h5 align="center"><b>從哪裡開始?</b></h5>
+    </div> <!-- sixthArea結束 -->
+
+    <div id="sevenArea">
+
+      <div class="sevenArea-center">
+
+        <div class="days">
+          <i class="fa-regular fa-calendar-days" style="font-size:15rem;color: rgb(54, 47, 51);"></i>
+          <h7><b>預約達人</b></h7>
+          <p>聯繫達人、確認旅行日期、支付，一切都能通過Tripbaa 值得信賴的服務完成。</p>
+        </div>
+
+        <div class="flag">
+          <i class="fa-solid fa-flag" style="font-size:15rem;color: rgb(54, 47, 51);"></i>
+          <h7><b>夢想成真</b></h7>
+          <p>無論您身處臺灣的哪個角落, 您都可以像個"在地"人，認識真正屬於臺灣的美好與回憶。</p>
+        </div>
+
+        <div class="flag2">
+          <i class="fa-regular fa-compass" style="font-size:15rem;color: rgb(54, 47, 51);"></i>
+          <h7><b>探索行程</b></h7>
+          <p>無論購物指南，田埂晚宴，地心探索，海上行舟等特色行程，您都可以在Tripbaa 上找到。</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="eighthArea">
+    <p>關於tripbaa</p>
+    <p>關於我們</p>
+    <p>Blog</p>
+    <p>加入我們</p>
+    <p>合作供應商</p>
+    <p>聯盟行銷</p>
+  </div>
+
+
+  <!-- (CDN) -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

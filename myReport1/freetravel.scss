@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#firstArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+    .right {
+
+        position: absolute;
+        top: 0;
+        left: 1190px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(21, 95, 199);
+        display: block;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: rgb(21, 95, 199);
+        border-radius: 10px;
+    }
+
+    .right-two {
+        position: absolute;
+        top: 0;
+        left: 1280px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(21, 95, 199);
+        display: block;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: rgb(21, 95, 199);
+        border-radius: 10px;
+    }
+}
+
+.firstArea-center {
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 300px;
+    height: 80px;
+    background-image: url('./img2/logo.png');
+
+}
+
+
+ul {
+    list-style-type: none; //導覽列設定，把圓點去掉
+    padding: 0px;
+    background-color: rgb(91, 204, 245); //設定藍色背景
+    overflow: hidden; //之所以設定overflow: hidden，是因為下面li有float: left，會讓我的藍色背景消失，使用 overflow：hidden 清除浮動，
+
+
+    li {
+        float: left; //把原本垂直的導覽列，浮動 (Float)往左邊水平排列
+        border-right: 1px solid beige;
+
+        a {
+            display: block;
+            padding: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            text-align: left;
+
+            &:hover {
+
+                background-color: rgb(8, 8, 8);
+                color: aliceblue;
+
+            }
+        }
+    }
+}
+
+#secondArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 150px;
+    background-color: rgb(204, 255, 0);
+    position: relative;
+    top: 50%;
+
+    .carousel-item {
+        width: 100%;
+        min-width: 1263px;
+        height: 600px;
+
+
+        h1 {
+            color: #ffffff;
+            font-size: 50px;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 30px;
+        }
+    }
+
+    .search {
+        width: 100%;
+        min-width: 1263px;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.685);
+        position: absolute;
+        top: 450px;
+        left: 0%;
+        border-radius: 10px;
+        padding: 15px 0px 0px 20%;
+    }
+
+    .search-input {
+        width: 800px;
+        height: 54px;
+        font-size: 24px;
+        outline: none;
+        border-radius: 10px;
+        padding: 3px 0px 5px 10px;
+    }
+
+    .button1 {
+        width: 110px;
+        height: 54px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        font-size: 24px;
+        background-color: rgb(91, 204, 245);
+        color: #ffffff;
+    }
+
+    .menu {
+        width: 800px;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+            background-color: rgba(102, 205, 236, 0);
+
+            h2 {
+                display: block;
+                font-size: 20px;
+                padding: 10px;
+                color: #ffd900;
+            }
+
+            li {
+                border-right: 1px solid rgb(255, 255, 255);
+
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: rgb(255, 255, 255);
+                    text-align: left;
+
+                    &:hover {
+                        background-color: rgb(91, 204, 245);
+                        color: #ffffff;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+
+//     width: 100%;
+//     min-width: 1263px;
+//     height: 500px;
+//     background-color: rgb(255, 242, 0);
+//     position: relative;
+//     top: 800px;
+
+// h3{font-size: 40px;
+
+// }
+
+
+#thirdArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 1800px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 500px;
+    padding: 50px 200px;
+    $card-height: 100%;
+
+    h3 {
+        font-size: 40px;
+    }
+
+    a {
+        text-decoration: none; //移除超連結底線
+
+    }
+
+    .col {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .btn {
+        //更多按鈕
+        display: inline-block;
+        position: relative;
+
+        z-index: 1;
+        min-width: 200px;
+        background: #FFFFFF;
+        border: 2px solid rgb(32, 187, 218);
+        border-radius: 4px;
+        color: rgb(32, 187, 218);
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.5s;
+        padding: 10px 20px;
+        margin: 30px 41%;
+        font-size: 30px;
+    }
+
+    .btn span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        color: rgb(25, 23, 23);
+    }
+
+    .btn:hover span {
+        transform: translateY(0) scale(2);
+    }
+
+    .btn span:nth-child(1) {
+        --n: 1;
+    }
+
+    .btn span:nth-child(2) {
+        --n: 2;
+    }
+
+    .btn span:nth-child(3) {
+        --n: 3;
+    }
+
+    .btn span:nth-child(4) {
+        --n: 4;
+    }
+
+}
+
+
+
+#fourthArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 1800px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 350dvh;
+    padding: 50px 200px;
+
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .col {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .card {
+        //直接將整張卡變色，要不然只改card-body很麻煩
+        background-color: rgb(232, 226, 206);
+    }
+
+    .button2 {
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 3px 3px; //讓按鈕四周留白
+        margin: 4px 0; //讓按鈕別離文字段落太近
+        border: 1px solid rgb(0, 195, 254);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 195, 254);
+    }
+
+    .location {
+        display: flex;
+        align-items: flex-end; //交錯軸從後排列
+    }
+
+    a {
+        text-decoration: none; //移除超連結底線
+        color: #2e2f2f;
+    }
+
+
+    .btn {
+        //更多按鈕
+        display: inline-block;
+        position: relative;
+
+        z-index: 1;
+        min-width: 200px;
+        background: #FFFFFF;
+        border: 2px solid rgb(32, 187, 218);
+        border-radius: 4px;
+        color: rgb(32, 187, 218);
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.5s;
+        padding: 10px 20px;
+        margin: 30px 41%;
+        font-size: 30px;
+    }
+
+    .btn span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: rgb(32, 156, 218);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        color: rgb(25, 23, 23);
+    }
+
+    .btn:hover span {
+        transform: translateY(0) scale(2);
+    }
+
+    .btn span:nth-child(1) {
+        --n: 1;
+    }
+
+    .btn span:nth-child(2) {
+        --n: 2;
+    }
+
+    .btn span:nth-child(3) {
+        --n: 3;
+    }
+
+    .btn span:nth-child(4) {
+        --n: 4;
+    }
+
+
+}
+
+#fifthArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 580px;
+    background-color: rgb(89, 223, 253);
+    position: absolute;
+    top: 620dvh;
+    padding: 50px 200px;
+
+    h5 {
+        font-size: 40px;
+    }
+
+    .container {
+        background-color: rgb(255, 255, 255);
+        height: 650px;
+
+    }
+
+}
+
+
+
+#sixthArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 80px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 690dvh;
+    padding: 50px 200px;
+
+    h5 {
+        font-size: 40px;
+    }
+
+
+}
+
+#sevenArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 600px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 720dvh;
+    padding: 50px 30%;
+    display: flex;
+
+    .sevenArea-center {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .days {
+        margin-left: -100px;
+        margin-right: 100px;
+        padding: 0 auto;
+
+    }
+
+    .flag {
+        margin-right: 100px;
+        padding: 0 auto;
+    }
+
+    .flag2 {
+        margin-right: 350px;
+        padding: 0 auto;
+    }
+}
+
+
+
+
+#eighthArea {
+    width: 100%;
+    min-width: 1263px;
+    height: 600px;
+    background-color: #5e5656;
+    position: absolute;
+    top: 800dvh;
+    padding: 50px 100px;
+
+
+    p {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+}
